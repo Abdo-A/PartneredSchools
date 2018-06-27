@@ -1,7 +1,6 @@
 #partneredschools {
     background-color: #EFEEF3;
     display: grid;
-
 }
 #partneredschools_secondary_title {
     text-transform: uppercase;
@@ -42,15 +41,19 @@
     float: right;
     background-color: white;
     margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #partneredschools_card_title {
     color: #9290A6;
     cursor: pointer;
+    font-size: 20px;
 }
 #partneredschools_card_city_country {
     color: #ccc;
     margin-bottom: 10%;
+    font-size: 12px;
 }
 #partneredschools_card_website {
     color: red;
