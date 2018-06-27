@@ -1,0 +1,56 @@
+#partneredschools {
+    background-color: #EFEEF3;
+    display: grid;
+
+}
+#partneredschools_secondary_title {
+    text-transform: uppercase;
+    color: red;
+}
+#partneredschools_letter_wrapper {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+#partneredschools_left_column {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+#continentsSelect, #countriesSelect {
+    width: 186px;
+    height: 45px;
+    opacity: 0.3;
+    border: solid 1px #13111d;
+    color: rgb(0, 0, 0);
+    float: right;
+}
+#partneredschools_selects {
+    margin-top: 4%;
+    margin-left: 50%;
+}
+
+#partneredschools_card {
+    width: 413px;
+    height: 210px;
+    display: inline-block;
+    width: 40%;
+    float: right;
+    background-color: white;
+    margin: 10px;
+}
+
+#partneredschools_card_title {
+    color: #9290A6;
+    cursor: pointer;
+}
+#partneredschools_card_city_country {
+    color: #ccc;
+    margin-bottom: 10%;
+}
+#partneredschools_card_website {
+    color: red;
+    cursor: pointer;
+}
+@media (max-width: 500px){
+
+}

@@ -1,0 +1,23 @@
+#school {
+    text-align: center;
+}
+
+#school_img {
+    width: 628px;
+    height: 800px;
+}
+
+#school_text_wrapper {
+    width: 628px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: left;
+}
+
+#school_text {
+    font-size: 15px;
+    color: #9290A6;
+}
+@media (max-width: 500px){
+
+}
