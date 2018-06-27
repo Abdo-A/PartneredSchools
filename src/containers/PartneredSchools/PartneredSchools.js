@@ -78,6 +78,7 @@ class PartneredSchools extends Component {
             <div id="partneredschools">
                 <div id="partneredschools_left_column">
                     <p id="partneredschools_secondary_title">List of the partner schools</p>
+                    <span id="partneredschools_horizontal_line"></span>
                     <span id="partneredschools_letters">
                     {alphabet.map((letter)=>{
                         return (
