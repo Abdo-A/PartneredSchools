@@ -20,7 +20,7 @@ let schoolsData = [{
   "testimonial_writer": "Elyn Ketchaside",
   "testimonial_writer_title": "Recruiting Manager",
   "email": "eketchaside1@hatena.ne.jp",
-  "website": "",
+  "website": "https://howstuffworks.com/justo/in.html",
   "country": "Peru",
   "continent": "PE",
   "images": ["https://picsum.photos/628/800?image=123","https://picsum.photos/628/800?image=122","https://picsum.photos/628/800?image=121"]
@@ -189,7 +189,7 @@ let schoolsData = [{
   "testimonial_writer": "Olenolin Giles",
   "testimonial_writer_title": "VP Marketing",
   "email": "ogilese@taobao.com",
-  "website": "",
+  "website": "http://auda.org.au/porttitor/lorem/id.png",
   "country": "Moldova",
   "continent": "MD",
   "images": ["https://picsum.photos/628/800?image=123","https://picsum.photos/628/800?image=122","https://picsum.photos/628/800?image=121"]
