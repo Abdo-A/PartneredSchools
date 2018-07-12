@@ -1,64 +1,132 @@
 #partneredschools {
     background-color: #EFEEF3;
     display: grid;
+    min-height: 120vh;
+    font-family: "Gotham"
 }
 #partneredschools_secondary_title {
     text-transform: uppercase;
-    color: red;
+    color: #bd1a41;
+    font-family: 'Gotham';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 11px;
 }
-#partneredschools_horizontal_line {
+
+#partneredschools_secondary_title:after {
+    display: block;
     height: 2px;
-    width: 20px;
-    background-color: red;
+    background-color: #bd1a41;
+    content: " ";
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 2%;
+  }
+
+#partneredschools_letters {
+    width: 30%;
+    margin-left: 12px;
+    margin-top: 60px;
 }
+
 #partneredschools_letter_wrapper {
     display: inline-block;
-    margin: 5px;
     cursor: pointer;
+    width: 50%;
+    margin: 7px 0;
 }
+
+#partneredschools_letter:link,#partneredschools_letter:visited {
+    text-decoration: none;
+    color: #a9a6ba;
+}
+
+
 #partneredschools_left_column {
-    grid-column: 1;
-    grid-row: 2 / 5;
+    width: 15%;
+    float: left;
+    position: fixed;
 }
 #continentsSelect, #countriesSelect {
     width: 186px;
     height: 45px;
-    opacity: 0.3;
-    border: solid 1px #13111d;
-    color: rgb(0, 0, 0);
+    border: solid 1px #dddce2;
+    color: #4e4a6e;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 12px;
     float: right;
+    background-color: transparent;
+    padding-left: 5px;
 }
+
+#continentsSelect {
+    margin-left: -20px;
+    margin-right: 20px
+}
+
 #partneredschools_selects {
-    margin-top: 4%;
+    margin-top: 1%;
     margin-left: 50%;
+    position: absolute;
+}
+
+.partneredschools_cards_wrapper {
+    margin: 0;
+    float: right;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.partneredschools_letter_and_cards_wrapper {
+    margin-top: 2%;
+    padding-top: 5%;
+}
+
+#partneredschools_letter_for_cards {
+    color: #bd1a41;
+    margin: 10px;
 }
 
 #partneredschools_card {
-    width: 413px;
     height: 210px;
     display: inline-block;
-    width: 40%;
-    float: right;
-    background-color: white;
-    margin: 10px;
-    padding: 20px;
+    width: 47.5%;
+    margin: 1.2%;
+    background-color:#fff;
+    padding: 20px 0 0 45px;
     box-sizing: border-box;
 }
 
+
 #partneredschools_card_title {
-    color: #9290A6;
+    color: #706d8c;
     cursor: pointer;
     font-size: 20px;
+    font-family: 'Gotham';
+    font-weight: 400;
 }
 #partneredschools_card_city_country {
     color: #ccc;
     margin-bottom: 10%;
     font-size: 12px;
+    font-family: "Gotham";
+    font-weight: 400;
+    margin-bottom: 18%;
 }
 #partneredschools_card_website {
-    color: red;
+    color: #bd1a41;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Gotham";
+    font-weight: 400;    
 }
+
+#websiteIcon {
+    font-size: 5px
+}
+
 @media (max-width: 500px){
 
 }

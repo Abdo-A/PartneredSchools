@@ -15,3 +15,30 @@ const countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguill
 ,"Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
 
 export default countries;
+
+export const asianCountries = ["Afganistan","Armenia","Azerbaijan","Bangladesh","Bhutan","Brunei Darussalam",
+    "Cambodia","China","Georgia","Hong Kong","India","Indonesia","Japan","Kazakhstan", "North Korea","South Korea","Kyrgyzstan",
+    "Laos","Macao","Malaysia","Maldives","Mongolia","Myanmar","Nepal","Pakistan","Phillipines","Singapore","Sri Lanka",
+    "Taiwan","Tajikistan","Thailand","Timor Leste","Turkmenistan","Uzbekistan","Vietnam"];
+
+export const europeanCountries = ["Albania","Andorra","Austria","Belarus","Belgium","Bosnia","Bulgaria","Czech Republic","Croatia","Denmark"
+,"Estonia","Germany","Greece","Hungary","Iceland","Ireland","Italy","Kosovo","Macedonia","Monaco","Montenegro","Netherlands","Norway","Poland",
+"Romania","Russia","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Turkey","Ukraine","United Kingdom"];
+
+export const africanCountries = ["Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi",
+    "Cameroon","Central African Republic","Chad","Comoros","Democratic Republic of the Congo","Republic of the Congo",
+    "Cote deIvoire","Djibouti","Egypt","Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea-Bissau","Kenya",
+    "Lesotho","Liberia","Libya","Madagascar","Malawi","Mali","Mauritania","Mauritius","Morocco","Mozambique","Namibia","Niger",
+    "Nigeria","Rwanda","Senegal","Somalia","South Africa","South Sudan","Sudan","Swaziland","Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe"];
+
+export const oceaniaCountries = ["Australia","Fiji","Kiribati","Marshall Islands","Micronesia","Nauru","New Zealand",
+    "Palau","Papua New Guinea","Samoa","Solomon Islands","Tonga","Tuvalu","Vanuatu"];
+
+export const northAmericanCountries = ["Antigua and Barbuda","Bahamas","Barbados","Belize","Canada","Costa Rica",
+"Cuba","Dominica","Dominican Republic","El Salvador","Grenada","Guatemala","Haiti","Honduras","Jamaica",
+"Mexico","Nicaragua","Panama","United States"];
+
+
+export const southAmericanCountries = ["Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","Guyana",
+"Paraguay","Peru","Suriname","Uruguay","Venezuela"];
+

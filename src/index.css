@@ -1,5 +1,91 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Gotham";
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('vendors/fonts/Gotham-Font/Gotham-Bold.otf'); /* IE9 Compat Modes */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('vendors/fonts/Gotham-Font/GothamMedium.ttf') format('truetype'); /* IE9 Compat Modes */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Gotham';
+  src: url('vendors/fonts/Gotham-Font/Gotham-Thin.otf'); /* IE9 Compat Modes */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Gotham-Bold';
+  src: url('vendors/fonts/Gotham-Font/Gotham-Bold.otf'); /* IE9 Compat Modes */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+
+ @font-face {
+  font-family: 'Gotham-Medium';
+  src: url('vendors/fonts/Gotham-Font/GothamMedium.ttf') format('truetype'); /* IE9 Compat Modes */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Gotham-Thin';
+  src: url('vendors/fonts/Gotham-Font/Gotham-Thin.otf'); /* IE9 Compat Modes */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Gotham-Light';
+  src: url('vendors/fonts/Gotham-Font/Gotham-Light.otf'); /* IE9 Compat Modes */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Gotham-Book';
+  src: url('vendors/fonts/Gotham-Font/GothamBook.ttf'); /* IE9 Compat Modes */
+   font-weight: 400;
+   font-style: normal;
+ }

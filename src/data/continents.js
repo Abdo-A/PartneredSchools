@@ -1,6 +1,5 @@
 const continents = [
     "Africa",
-    "Antarctica",
     "Asia",
     "Europe",
     "South America",
