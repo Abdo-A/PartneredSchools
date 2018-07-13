@@ -20,7 +20,9 @@ class PartneredSchools extends Component {
     };
 
     componentDidMount() {
-        configureAnchors({offset:-60,scrollDuration:1000});        
+        configureAnchors({offset:-60,scrollDuration:1000});
+        
+        document.getElementsByClassName("partneredschools_letter")[0].style.color="#bd1a41";
     }
 
     showAllSchools = ()=>{
@@ -172,7 +174,7 @@ class PartneredSchools extends Component {
                         <div id="partneredschools_letters">
                         {alphabet.map((letter)=>{
                             return (
-                            <div id="partneredschools_letter_wrapper" key={letter}>
+                            <div id="partneredschools_letter_wrapper" className="partneredschools_letter_wrapper" key={letter}>
                                 <div>
                                     <a href={"#"+letter} id="partneredschools_letter" className="partneredschools_letter" onClick={(event)=>{this.colorMe(event)}}>{letter.toUpperCase()}</a>
                                 </div>
@@ -181,28 +183,30 @@ class PartneredSchools extends Component {
                         </div>
                     </div>
 
-                    <div id="partneredschools_selects">
                     
-                        <select onClick={()=>{this.showBasedOnCountry()}} id="countriesSelect" className="clearfix">
-                            <option value="" selected disabled>Country</option>
-                            {this.state.countriesToSelectFrom.map((country)=>
-                                (
-                                    <option key={country} value={country}>{country}</option>
-                                ))}
-                        </select>
-
-                        <select onClick={()=>{this.showBasedOnContinent()}} id="continentsSelect" className="clearfix">
-                            <option value="" selected disabled>Continent</option>
-                            {continents.map((continent)=>
-                                (
-                                    <option key={continent} value={continent}>{continent}</option>
-                                ))}
-                        </select>
-
-                    </div>
 
 
                     <div className="partneredschools_cards_wrapper clearfix">
+
+                        <div id="partneredschools_selects">
+
+                            <select onClick={()=>{this.showBasedOnContinent()}} id="continentsSelect" className="clearfix">
+                                <option value="" selected disabled>Continent</option>
+                                {continents.map((continent)=>
+                                    (
+                                        <option key={continent} value={continent}>{continent}</option>
+                                    ))}
+                            </select>
+                        
+                            <select onClick={()=>{this.showBasedOnCountry()}} id="countriesSelect" className="clearfix">
+                                <option value="" selected disabled>Country</option>
+                                {this.state.countriesToSelectFrom.map((country)=>
+                                    (
+                                        <option key={country} value={country}>{country}</option>
+                                    ))}
+                            </select>
+
+                        </div>
 
 
                     {alphabet.map((letter)=>{
