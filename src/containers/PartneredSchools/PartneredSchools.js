@@ -9,6 +9,7 @@ import alphabet from '../../data/alphabet';
 import continents from '../../data/continents';
 import countries, { asianCountries, europeanCountries, africanCountries, oceaniaCountries, northAmericanCountries, southAmericanCountries } from '../../data/countries';
 
+let checkColorInterval;
 
 class PartneredSchools extends Component {
 
@@ -16,13 +17,20 @@ class PartneredSchools extends Component {
         showedSchools:'',
         selectedCountry:'',
         selectedContinent:'',
-        countriesToSelectFrom: countries
+        countriesToSelectFrom: countries,
+        lastLetterOnScroll: 'A'
     };
 
     componentDidMount() {
         configureAnchors({offset:-60,scrollDuration:1000});
         
         document.getElementsByClassName("partneredschools_letter")[0].style.color="#bd1a41";
+
+        checkColorInterval = setInterval(()=>{this.colorLetterOnScroll()},20);
+    }
+
+    componentWillUnmount() {
+        clearInterval(checkColorInterval);
     }
 
     showAllSchools = ()=>{
@@ -57,6 +65,27 @@ class PartneredSchools extends Component {
             });
             event.target.style.color="#bd1a41";
         }
+    };
+
+    colorLetterOnScroll=()=>{
+        console.log("me");
+        if(window.location.hash && this.state.lastLetterOnScroll!==window.location.hash.split('')[1].toUpperCase() && window.location.hash.split('')[1] && !window.location.hash.split('')[2]){
+        
+                let currentLetterOnScroll=window.location.hash.split('')[1].toUpperCase();
+                let letters = document.getElementsByClassName("partneredschools_letter");
+                Array.prototype.forEach.call(letters, (el)=>{
+                    if(el.innerHTML==currentLetterOnScroll){
+                        el.style.color="#bd1a41";
+                    } else {
+                        el.style.color="#a9a6ba";
+                    }
+                });
+            
+                this.setState(()=>({
+                    lastLetterOnScroll:currentLetterOnScroll
+                }));
+
+        };
     };
 
     showBasedOnCountry=()=>{
@@ -152,7 +181,7 @@ class PartneredSchools extends Component {
     
     goToSchool=(schoolName)=>{
         let url = schoolName.split(" ").join("");
-        console.log(url);
+        
         this.props.history.push("partneredschools/"+url);
     };
 
@@ -168,7 +197,6 @@ class PartneredSchools extends Component {
         return (
             <div id="partneredschools">
                 <div className="container">
-
                     <div id="partneredschools_left_column" className="clearfix">
                         <p id="partneredschools_secondary_title">List of the <br/> partner schools</p>
                         <div id="partneredschools_letters">
@@ -184,7 +212,6 @@ class PartneredSchools extends Component {
                     </div>
 
                     
-
 
                     <div className="partneredschools_cards_wrapper clearfix">
 

@@ -1303,8 +1303,10 @@ let schoolsData = [{
 export default schoolsData;
 
 
-export const testimonialBackgroundImage="https://picsum.photos/1440/800?image=89";
+export const testimonialBackgroundImage="https://images.unsplash.com/photo-1531504746770-bb82a403d311?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a36763822e1401b55b0fcc7683199347&auto=format&fit=crop&w=658&q=80";
+export const testimonialBackgroundImageDarkness=0.7;
 
 
+//Expected dimensions for the images in the school images array are around: width: 628px, height: 800px
 
 //Website used to generate the JSON data: https://mockaroo.com/
